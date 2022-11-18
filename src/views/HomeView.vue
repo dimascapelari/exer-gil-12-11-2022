@@ -2,7 +2,8 @@
   <div class="text-center">
     <h2>Home</h2>
     <CompModal :title="tituloModal" ref="dimasModal">
-      <template v-slot:modal-body>
+      <!-- <template v-slot:modal-body> -->
+      <template #modal-body>
         <h3>Conteúdo do Modal via slot</h3>
       </template>
       <template v-slot:modal-footer>
