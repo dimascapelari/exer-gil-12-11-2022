@@ -1,5 +1,19 @@
 <template>
-  <app-modal ref="appModal"> </app-modal>
+  <app-modal ref="appModal">
+    <template v-slot:modal-body>
+      <h4>Conteúdo via slot</h4>
+    </template>
+    <template v-slot:modal-footer>
+      Botão via Slot
+      <button
+        type="button"
+        class="btn btn-danger"
+        @click="appModal.fecharModal"
+      >
+        Close
+      </button>
+    </template>
+  </app-modal>
 </template>
 
 <script>

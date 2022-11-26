@@ -1,7 +1,8 @@
 <template>
   <div class="text-center">
     <h2>Home</h2>
-    <edit-user-modal ref="editUserModal"> </edit-user-modal>
+    <edit-user-modal ref="editUserModal" title="Título via props">
+    </edit-user-modal>
     <button
       class="btn btn-primary"
       @click="editUserModal.appModal.modal.show()"
