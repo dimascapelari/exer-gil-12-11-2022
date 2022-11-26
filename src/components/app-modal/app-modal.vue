@@ -1,15 +1,5 @@
 <template>
   <div>
-    <!-- Button trigger modal -->
-    <!-- <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modalDimas"
-    >
-      Abrir Modal
-    </button> -->
-
     <!-- Modal -->
     <div
       class="modal fade"
@@ -34,14 +24,6 @@
           </div>
           <div class="modal-footer">
             <slot name="modal-footer"></slot>
-            <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              @click="fecharModal()"
-            >
-              Close
-            </button> -->
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
           </div>
         </div>
       </div>
